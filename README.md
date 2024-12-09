@@ -41,6 +41,9 @@ API_KEY = get_api_key(API_KEY_FILE)
 
 This ensures the API key is not hardcoded in the script, protecting it from accidental exposure.
 
+**Handling API Limitations**
+Due to the restrictions of the YouTube Data API, I was unable to retrieve all the comments for every video in the channel. The API enforces a quota limit, and despite implementing pagination to fetch comments in batches, some requests exceeded the daily quota or returned HTTP 403 errors for certain videos. 
+
 
 **Results**
 Total Comments Analyzed: 873,805
